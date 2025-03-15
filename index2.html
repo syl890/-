@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习制作HTML</title>
+</head>
+
+<body>
+    <!-- 标题块元素 -->
+    <h1>如何学习制作HTML</h1>
+
+    <!-- 段落块元素 -->
+    <p>HTML（超文本标记语言）是构建网页的基础。以下是一些学习制作HTML的步骤和资源。</p>
+
+    <!-- 无序列表 -->
+    <h2>学习步骤</h2>
+    <ul>
+        <li>了解HTML基础概念</li>
+        <li>学习常用HTML标签</li>
+        <li>实践编写HTML代码</li>
+        <li>参考优秀的HTML案例</li>
+    </ul>
+
+    <!-- 有序列表 -->
+    <h2>推荐资源</h2>
+    <ol>
+        <li><a href="https://www.w3schools.com/html/">W3Schools HTML教程</a></li>
+        <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML">MDN Web Docs HTML文档</a></li>
+    </ol>
+
+    <!-- 逻辑区块div -->
+    <div>
+        <h3>HTML代码示例</h3>
+        <p>以下是一个简单的HTML代码示例：</p>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="zh"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;示例页面&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;欢迎来到示例页面&lt;/h1&gt;
+    &lt;p&gt;这是一个简单的HTML页面。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+
+    <!-- 嵌入内容元素 - 图片 -->
+    <h2>HTML图标示例</h2>
+    <img src="C:\Users\邵奕琳\Pictures\微信图片_20250312152533.jpg" alt="HTML5图标" width="200">
+
+    <!-- 嵌入内容元素 - iframe -->
+    <h2>嵌入在线教程</h2>
+    <iframe src="https://www.bilibili.com/video/BV1jj411P7Yp?t=19.2" width="100%" height="500"></iframe>
+
+    <!-- 表格 -->
+    <h2>常用HTML标签表格</h2>
+    <table>
+        <tr>
+            <th>标签</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; - &lt;h6&gt;</td>
+            <td>标题标签</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>段落标签</td>
+        </tr>
+    </table>
+
+    <!-- 表单 -->
+    <h2>反馈表单</h2>
+    <form action="#">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">邮箱:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="topic">感兴趣的主题:</label>
+        <select id="topic" name="topic">
+            <option value="基础标签">基础标签</option>
+            <option value="表单元素">表单元素</option>
+            <option value="嵌入内容">嵌入内容</option>
+        </select><br>
+        <button type="submit">提交</button>
+    </form>
+</body>
+
+</html>
