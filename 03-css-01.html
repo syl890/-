@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS练习</title>
+    <link rel="stylesheet" href="#  main.css" />
+    <style>
+        h2 {
+            font-family: "宋体", "sans-serif";
+            text-decoration: underline;
+            color: rgb(180, 240, 179);
+        }
+        
+        h1 {
+            font-family: "华文新魏", sans-serif;
+            /* 设置线性渐变背景 */
+            background-image: linear-gradient(to right, #007BFF, #00FFFF);
+            /* 移除文字渐变相关样式 */
+            /* -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent; */
+            color: white; /* 设置文字颜色为白色，以便在渐变背景上可见 */
+        }
+        /* 为 p 元素添加首行缩进样式 */
+        p {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>CSS练习</center>
+    </h1>
+    <!-- 这里添加了指定的文字，并设置背景色为浅黄色 -->
+    <p style="background-color: #FFFFCC;">CSS(Cascading Style Sheets)层级样式表，用以控制页面样式，实现页面中元素的表现形式、区块的布局、不同设备的适应等等，是 Web 标准中实现内容和表现相分离的唯一机制。</p>
+    <div>
+        <h2>
+            使用样式表的三种方式
+        </h2>
+        <ul>
+            <li style="font-style: italic;">外部样式表</li>
+            <li style="color: chocolate; font-style: italic;">内部样式表</li>
+            <li style="color: rgb(182, 209, 228); font-style: italic;">内嵌样式表</li>
+        </ul>
+    </div>
+</body>
+
+</html>
