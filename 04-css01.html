@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影推荐</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to bottom, #a19f9f, #6f6161);
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .movie {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .movie::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .movie:nth-child(1)::before {
+            background-image: url("星际穿越1.jpg");
+        }
+
+        .movie:nth-child(2)::before {
+            background-image: url("泰坦尼克号2.jpg");
+        }
+
+        .movie:nth-child(3)::before {
+            background-image: url("盗梦空间1.jpg");
+        }
+
+        .movie img {
+            display: none;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* 新增制作者样式 */
+        .producer {
+            text-align: center;
+            font-size: 11px;
+            color: #aba4a4;
+            margin-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            /* 添加渐变色 */
+            background: linear-gradient(to right, #e6b0cc, rgb(161, 65, 73));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* 设置特定文字颜色 */
+        .movie p strong {
+            color: #daf23b;
+        }
+
+        section {
+            display: none;
+        }
+
+        #sci-fi {
+            display: block;
+        }
+
+        .rating-recommend {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        /* 修改评分和评价文字颜色 */
+        .rating-recommend label,
+        .rating-recommend p {
+            color: #849323;
+        }
+
+        /* 定义动画 */
+        @keyframes countAnimation {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* 应用动画到标题 */
+        section h2 {
+            animation: countAnimation 1s ease-in-out;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            const targetSection = document.getElementById(sectionId);
+            targetSection.style.display = 'block';
+        }
+
+        function submitRating(movieId) {
+            const ratingInput = document.getElementById(`rating-${movieId}`);
+            const commentInput = document.getElementById(`comment-${movieId}`);
+            const ratingValue = ratingInput.value;
+            const commentValue = commentInput.value;
+
+            const ratingDisplay = document.getElementById(`user-rating-${movieId}`);
+            const commentDisplay = document.getElementById(`user-comment-${movieId}`);
+
+            ratingDisplay.textContent = `用户评分：${ratingValue} 分`;
+            commentDisplay.textContent = `用户评价：${commentValue}`;
+
+            ratingInput.value = '';
+            commentInput.value = '';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>电影推荐</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('sci-fi')">科幻</a></li>
+            <li><a href="#" onclick="showSection('romance')">爱情</a></li>
+            <li><a href="#" onclick="showSection('mystery')">悬疑</a></li>
+        </ul>
+    </nav>
+
+    <section id="sci-fi">
+        <h2>科幻电影</h2>
+        <div class="movie">
+            <h3>《星际穿越》</h3>
+            <img src="interstellar.jpg" alt="星际穿越海报">
+            <p>剧情简介：故事设定在未来，地球面临严重的粮食危机，人类生存岌岌可危。前NASA宇航员库珀，在一次意外中发现神秘的引力异常点，从而被卷入一场拯救人类的星际穿越任务。他穿越虫洞，前往遥远星系寻找新家园，期间遭遇了各种超乎想象的宇宙奇观与致命危机，像时间膨胀导致的一小时七年、令人胆寒的黑洞卡冈图雅。库珀与女儿墨菲之间跨越时空的情感羁绊，成为推动故事发展的情感内核，父女俩虽远隔浩瀚星河，却通过引力传递着爱与希望，最终库珀依靠爱的力量，在高维空间给过去的自己传递关键信息，完成拯救人类的使命。
+            </p>
+            <p>精彩片段：片中库珀对女儿墨菲说的那句 “不要温和地走进那个良夜” 自称经典，它传递出人类面对绝境时的不屈与抗争精神，激励着人们哪怕身处黑暗，也要勇敢地追寻光明。</p>
+            <p>评分：9.4分</p>
+            <p>影评：与其说《星际穿越》是一部科幻电影，不如说它是一部探讨爱与希望、人类命运与宇宙奥秘的哲学史诗。影片中，爱被赋予了超越时空的力量，打破了维度的限制，让观众深刻领悟到，爱是人类最强大的武器，也是跨越一切艰难险阻的动力源泉。同时，影片也引发了人们对科技、人类未来以及宇宙探索的深刻思考。
+            </p>
+        </div>
+        <div class="rating-recommend">
+            <label for="rating-interstellar">你的评分（1 - 10）：</label>
+            <input type="number" id="rating-interstellar" min="1" max="10">
+            <label for="comment-interstellar">你的评价：</label>
+            <textarea id="comment-interstellar"></textarea>
+            <button onclick="submitRating('interstellar')">提交</button>
+            <p id="user-rating-interstellar"></p>
+            <p id="user-comment-interstellar"></p>
+        </div>
+    </section>
+
+    <section id="romance">
+        <h2>爱情电影</h2>
+        <div class="movie">
+            <h3>《泰坦尼克号》</h3>
+            <img src="titanic.jpg" alt="泰坦尼克号海报">
+            <p>剧情简介：1912 年 4 月 10
+                日，泰坦尼克号首航，贵族少女露丝与母亲及未婚夫卡尔登船，穷画家杰克赢下等舱船票。露丝厌倦上流社会，欲投海被杰克救下相识。杰克吸引露丝，两人感情升温。卡尔送“海洋之心”，露丝不为所动，让杰克画素描。4 月 14
+                日晚，船撞冰山沉没，杰克被陷害，露丝救出他，生死关头露丝放弃救生艇与杰克相拥。船沉，杰克将露丝推上木板，自己离世。多年后，年老露丝回忆点滴，抛“海洋之心”纪念爱情。
+            </p>
+            <p>精彩片段：杰克和露丝在船头感受海风的片段。</p>
+            <p>评分：9.2分</p>
+            <p>影评：《泰坦尼克号》是一部跨越时间和空间的经典之作。它不仅仅是一部爱情片，更是一部关于人性、生命和希望的电影。影片中，杰克和露丝的爱情故事令人动容，他们跨越了阶级的差异，勇敢地追求自己的爱情，即使面临生死考验，也毫不退缩。这种纯粹的爱情，在当今社会显得尤为珍贵。
+                同时，电影对泰坦尼克号沉没的场景还原得极其逼真，让观众仿佛身临其境，感受到了那场灾难的恐怖和无情。在灾难面前，人性的善恶也展现得淋漓尽致，有像卡尔这样自私自利的人，也有像杰克和露丝这样不离不弃的情侣，还有那些坚守岗位、舍己为人的船员。
+            </p>
+        </div>
+        <div class="rating-recommend">
+            <label for="rating-titanic">你的评分（1 - 10）：</label>
+            <input type="number" id="rating-titanic" min="1" max="10">
+            <label for="comment-titanic">你的评价：</label>
+            <textarea id="comment-titanic"></textarea>
+            <button onclick="submitRating('titanic')">提交</button>
+            <p id="user-rating-titanic"></p>
+            <p id="user-comment-titanic"></p>
+        </div>
+    </section>
+
+    <section id="mystery">
+        <h2>悬疑电影</h2>
+        <div class="movie">
+            <h3>《盗梦空间》</h3>
+            <img src="inception.jpg" alt="盗梦空间海报">
+            <p>剧情简介：道姆·柯布是一位经验老道的窃贼，他能够潜入人们的梦境中，窃取潜意识中有价值的秘密。在一次任务中，柯布不仅要面对强大的竞争对手，还要面对自己内心的愧疚和痛苦。他被要求执行一项极具挑战性的任务——在他人的梦境中植入一个想法，从而改变这个人的行为。柯布带领着他的团队，深入层层梦境，遭遇了各种意想不到的危险和挑战。
+            </p>
+            <p>精彩片段：梦境中城市折叠的片段。</p>
+            <p>评分：9.3分</p>
+            <p>影评：《盗梦空间》绝对是一部让人惊叹不已的神作！从剧情上来说，它复杂而又精妙，层层嵌套的梦境让人仿佛置身于一个神秘而又充满挑战的世界。每一次进入新的梦境，都让人充满期待，不知道接下来会发生什么。
+
+                影片的视觉效果也非常出色，各种奇幻的梦境场景让人目不暇接。从颠倒的城市到无尽的走廊，每一个画面都充满了想象力。</p>
+        </div>
+        <div class="rating-recommend">
+            <label for="rating-inception">你的评分（1 - 10）：</label>
+            <input type="number" id="rating-inception" min="1" max="10">
+            <label for="comment-inception">你的评价：</label>
+            <textarea id="comment-inception"></textarea>
+            <button onclick="submitRating('inception')">提交</button>
+            <p id="user-rating-inception"></p>
+            <p id="user-comment-inception"></p>
+        </div>
+    </section>
+    <!-- 在页面底端添加制作者信息 -->
+    <div class="producer">
+        制作者：邵奕琳
+    </div>
+</body>
+
+</html>
