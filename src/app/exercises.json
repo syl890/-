@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "title": "国考知识问答系统",
+    "description": "集成第三方API的公务员考试知识问答平台，支持行测、申论等科目在线答疑。",
+    "explanation": "练习内容：第三方API集成技术，包括fetch请求、数据获取、错误处理、响应式UI设计。对应课程：异步编程、API调用、前端数据交互。",
+    "link": "/practice/embed-demo",
+    "imageUrl": "/practice/images/公务员考试图片生成.png",
+    "tags": ["API集成", "公务员", "在线答疑"]
+  },
+  {
+    "id": 2,
+    "title": "公考备考计划",
+    "description": "个人化的公务员考试复习计划制定系统，React组件化实现。",
+    "explanation": "练习内容：React组件化开发、状态管理、条件渲染、事件处理、表单交互。对应课程：React基础、组件设计、用户交互。",
+    "link": "/practice/my-app",
+    "imageUrl": "/practice/images/公务员考试图片生成 (1).png",
+    "tags": ["React", "计划管理", "备考"]
+  },
+  {
+    "id": 3,
+    "title": "行测题型解析",
+    "description": "CSS样式实现的行测各题型知识点归纳和解题技巧展示。",
+    "explanation": "练习内容：CSS基础语法、选择器、盒模型、布局技术、样式美化。对应课程：CSS基础、页面布局、样式设计。",
+    "link": "/practice/03-css-01",
+    "imageUrl": "/practice/images/公务员考试图片生成 (2).png",
+    "tags": ["CSS", "行测", "题型"]
+  },
+  {
+    "id": 4,
+    "title": "申论写作技巧",
+    "description": "CSS选择器实现的申论写作要点和评分标准可视化展示。",
+    "explanation": "练习内容：CSS选择器进阶、伪类伪元素、样式优先级、响应式设计。对应课程：CSS选择器、样式优化、页面适配。",
+    "link": "/practice/03-css-02",
+    "imageUrl": "/practice/images/公务员考试图片生成 (3).png",
+    "tags": ["CSS", "申论", "写作"]
+  },
+  {
+    "id": 5,
+    "title": "公务员制度概览",
+    "description": "CSS布局技术展示公务员制度体系和职级晋升路径。",
+    "explanation": "练习内容：CSS布局技术、Flexbox、Grid布局、页面结构设计。对应课程：CSS布局、页面结构、响应式布局。",
+    "link": "/practice/04-css-01",
+    "imageUrl": "/practice/images/公务员考试图片生成.png",
+    "tags": ["CSS", "制度", "职级"]
+  },
+  {
+    "id": 6,
+    "title": "考试时间规划",
+    "description": "CSS定位实现的考试时间分配和答题节奏可视化指导。",
+    "explanation": "练习内容：CSS定位技术、absolute/relative定位、z-index层级、页面元素定位。对应课程：CSS定位、页面布局、元素控制。",
+    "link": "/practice/04-css-02",
+    "imageUrl": "/practice/images/公务员考试图片生成 (1).png",
+    "tags": ["CSS", "时间管理", "策略"]
+  },
+  {
+    "id": 7,
+    "title": "面试准备要点",
+    "description": "相对定位技术实现的公务员面试流程和评分细则展示。",
+    "explanation": "练习内容：CSS相对定位、元素关系、布局技巧、页面结构优化。对应课程：CSS定位进阶、页面优化、布局技巧。",
+    "link": "/practice/04-css-02-relative",
+    "imageUrl": "/practice/images/公务员考试图片生成 (2).png",
+    "tags": ["CSS", "面试", "准备"]
+  },
+  {
+    "id": 8,
+    "title": "在线模拟考试",
+    "description": "JavaScript交互实现的公务员考试在线练习和计时系统。",
+    "explanation": "练习内容：JavaScript基础语法、DOM操作、事件处理、定时器、用户交互。对应课程：JavaScript基础、DOM编程、交互设计。",
+    "link": "/practice/06-news01",
+    "imageUrl": "/practice/images/公务员考试图片生成.png",
+    "tags": ["JavaScript", "考试", "模拟"]
+  },
+  {
+    "id": 9,
+    "title": "成绩查询系统",
+    "description": "异步编程实现的公务员考试成绩查询和排名展示系统。",
+    "explanation": "练习内容：JavaScript异步编程、Promise、async/await、错误处理、数据加载。对应课程：异步编程、Promise、错误处理。",
+    "link": "/practice/07-async-01",
+    "imageUrl": "/practice/images/公务员考试图片生成 (2).png",
+    "tags": ["JavaScript", "异步", "查询"]
+  },
+  {
+    "id": 10,
+    "title": "岗位匹配推荐",
+    "description": "Fetch API实现的公务员岗位智能匹配和推荐系统。",
+    "explanation": "练习内容：Fetch API使用、HTTP请求、JSON数据处理、API集成、数据展示。对应课程：网络请求、API调用、数据处理。",
+    "link": "/practice/07-async-02",
+    "imageUrl": "/practice/images/公务员考试图片生成 (3).png",
+    "tags": ["JavaScript", "API", "推荐"]
+  },
+  {
+    "id": 11,
+    "title": "HTML学习教程",
+    "description": "全面的 HTML 基础教程，包含标签介绍、代码示例、表格和表单等核心概念。",
+    "explanation": "练习内容：HTML基础标签、表格制作、表单设计、页面结构、语义化标签。对应课程：HTML基础、表格表单、页面结构。",
+    "link": "/practice/index",
+    "imageUrl": "/practice/images/公务员考试图片生成.png",
+    "tags": ["HTML", "教程", "基础"]
+  },
+  {
+    "id": 12,
+    "title": "贵州酸汤鱼",
+    "description": "HTML和CSS构建的美食介绍页面，展示贵州特色酸汤鱼的制作方法和文化背景。",
+    "explanation": "练习内容：HTML语义化标签、文章结构、CSS样式美化、页面内容组织。对应课程：HTML基础、语义化、内容结构。",
+    "link": "/practice/05-news01",
+    "imageUrl": "/practice/images/公务员考试图片生成 (3).png",
+    "tags": ["HTML", "政策", "解读"]
+  },
+  {
+    "id": 13,
+    "title": "电影推荐",
+    "description": "JavaScript交互实现的电影推荐系统，包含电影列表、评分展示和推荐算法。",
+    "explanation": "练习内容：JavaScript数组操作、数据处理、图表展示、数据可视化。对应课程：JavaScript进阶、数据处理、可视化技术。",
+    "link": "/practice/06-news02",
+    "imageUrl": "/practice/images/公务员考试图片生成 (1).png",
+    "tags": ["HTML", "CSS", "JavaScript", "交互"]
+  }
+] 
